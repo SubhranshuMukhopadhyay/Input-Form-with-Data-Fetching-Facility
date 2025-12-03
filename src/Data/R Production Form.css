@@ -90,11 +90,11 @@
 .r-input-divs{
               text-align: center;
              }
-.r-button-div{
-              text-align: center;
-              margin-top: 2rem;
-              margin-bottom: 1rem;
-             }
+.r-form-button-div{
+                   text-align: center;
+                   margin-top: 2rem;
+                   margin-bottom: 1rem;
+                  }
 .r-button-submit{
                  font-size: larger;
                  padding-top: 1vmin;
@@ -119,32 +119,39 @@
                              width: 50%;
                              height: auto;
                             }
-.r-button-div{
-                  margin-top: 1vmin;
-                  margin-bottom: 1rem;
-                  margin-right: 1rem;
-                 }
+.r-result-button-div{
+                     margin-top: 1vmin;
+                     margin-bottom: 5rem;
+                     margin-right: 1rem;
+                    }
 .r-modebuttonspan{
-                  text-align: center;
+                  float: left;
                  }
 .r-modebutton{
               background-color: green;
               color: yellow;
-              padding: 0.5rem;
+              padding-top: 1vmin;
+              padding-bottom: 1vmin;
+              padding-left: 1.2vmin;
+              padding-right: 1.2vmin;
               border: none;
               border-radius: 1rem;
-              cursor: pointer;
              }
-.r-homebuttonspan{
-                  float: right;
-                 }
-.r-homebutton{
+.r-modebutton:hover{
+                    color: blueviolet;
+                    cursor: pointer;
+                   }
+.r-homelinkspan{
+                float: right;
+               }
+.r-homelink{
               background-color: green;
               color: yellow;
               padding: 1vmin;
               border: none;
               border-radius: 1rem;
               cursor: pointer;
+              font-size: 1rem;
              }
 #r-submittedsection-div{
                         text-align: center

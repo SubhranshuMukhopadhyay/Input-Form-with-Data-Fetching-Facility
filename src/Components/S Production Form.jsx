@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import '../Data/S Production Form.css'
 import { FaHouse, FaRegMoon, FaSun} from "react-icons/fa6";
 import {Workflows, Batch, Roles, Status} from './S Form Items'
+import { Link } from 'react-router';
 
 function SProductionForm () {
 
@@ -90,12 +91,12 @@ const [submitted, setSubmitted] = useState("");
               </div>
               <div className='s-lebel-divs'><label className={currentmode=='light'?'s-label-lightmode':'s-label-darkmode'}>Remarks</label></div>
               <div className='s-input-divs'><input className={currentmode=='light'?'s-inputs-lightmode':'s-inputs-darkmode'} type='text' name='remarks' placeholder='Enter Remarks (It should be text)' value={inputs.remarks} onChange={handleChange} required/></div>
-              <div className='s-button-div'><button className='s-button-submit' onClick={submitaction}>Submit</button></div>
+              <div className='s-result-button-div'><button className='s-button-submit' onClick={submitaction}>Submit</button></div>
             </div>
             <div className={currentmode=='light'? 's-output-container-lightmode':'s-output-container-darkmode'}>
-              <div className='s-button-div'>
+              <div className='s-result-button-div'>
                 <span className='s-modebuttonspan'><button className='s-modebutton' onClick={mode}>{currentmode == 'light'? <FaRegMoon/>:<FaSun/>}</button></span>
-                <span className='s-homebuttonspan'><button className='s-homebutton' onClick={()=>location.href='/'}><FaHouse/></button></span>
+                <span className='s-homelinkspan'><Link className='s-homelink' to='/'><FaHouse /></Link></span>
               </div>
               <div id='s-submittedsection-div'><textarea id={currentmode=='light'? 's-resultarea-lightmode':'s-resultarea-darkmode'} value={submitted} readOnly/></div>
             </div>

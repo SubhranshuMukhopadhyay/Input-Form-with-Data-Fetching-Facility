@@ -86,10 +86,10 @@
                    background-color: black;
                    color: greenyellow;
                   }
-.s-button-div{
-              text-align: center;
-              margin-top: 2rem;
-             }
+.s-result-button-div{
+                     text-align: center;
+                     margin-top: 2rem;
+                    }
 .s-button-submit{
                  font-size: larger;
                  padding-top: 1vmin;
@@ -101,29 +101,39 @@
                  background-color: rgb(44, 94, 221);
                  color: #fffafa;
                 }
-.s-button-div{
-              float: right;
-              margin-top: 1vmin;
-              margin-bottom: 1rem;
-              margin-right: 1rem;
-             }
+.s-result-button-div{
+                     margin-top: 1vmin;
+                     margin-bottom: 5rem;
+                     margin-right: 1rem;
+                    }
 .s-modebuttonspan{
-                  text-align: center;
+                  float: left;
                  }
 .s-modebutton{
               background-color: green;
               color: yellow;
-              padding: 0.5rem;
+              padding-top: 1vmin;
+              padding-bottom: 1vmin;
+              padding-left: 1.2vmin;
+              padding-right: 1.2vmin;
               border: none;
               border-radius: 1rem;
-              cursor: pointer;
              }
-.s-homebutton{
+.s-modebutton:hover{
+                    color: blueviolet;
+                    cursor: pointer;
+                   }
+.s-homelinkspan{
+                float: right;
+               }
+.s-homelink{
               background-color: green;
               color: yellow;
               padding: 1vmin;
               border: none;
               border-radius: 1rem;
+              cursor: pointer;
+              font-size: 1rem;
              }
 .s-output-container-lightmode{
                               float: right;

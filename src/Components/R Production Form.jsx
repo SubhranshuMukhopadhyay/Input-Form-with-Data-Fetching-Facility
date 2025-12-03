@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import '../Data/R Production Form.css'
 import { FaHouse, FaRegMoon, FaSun} from "react-icons/fa6";
 import {Workflows, Batch, Roles, Objecttypes, Status} from './R Form Items'
+import { Link } from 'react-router';
 
 function RProductionForm() {
 
@@ -98,12 +99,12 @@ function RProductionForm() {
         </div>
         <div className='r-lebel-divs'><label className={currentmode=='light'?'r-label-lightmode':'r-label-darkmode'}>Remarks</label></div>
         <div className='r-input-divs'><input className={currentmode=='light'?'r-inputs-lightmode':'r-inputs-darkmode'} type='text' name='remarks' placeholder='Enter Remarks (It should be text)' value={inputs.remarks} onChange={handleChange} required/></div>
-        <div className='r-button-div'><button className='r-button-submit' onClick={submitaction}>Submit</button></div>
+        <div className='r-form-button-div'><button className='r-button-submit' onClick={submitaction}>Submit</button></div>
       </div>
       <div className={currentmode=='light'? 'r-output-container-lightmode':'r-output-container-darkmode'}>
-        <div className='r-button-div'>
+        <div className='r-result-button-div'>
           <span className='r-modebuttonspan'><button className='r-modebutton' onClick={mode}>{currentmode == 'light'? <FaRegMoon/>:<FaSun/>}</button></span>
-          <span className='r-homebuttonspan'><button className='r-homebutton' onClick={()=>location.href='/'}><FaHouse /></button></span>
+          <span className='r-homelinkspan'><Link className='r-homelink' to='/'><FaHouse /></Link></span>
         </div>
         <div id='r-submittedsection-div'><textarea id={currentmode=='light'? 'r-resultarea-lightmode':'r-resultarea-darkmode'} value={submitted} readOnly/></div>
       </div>
